@@ -1,0 +1,42 @@
+snippet header "header file for python @mitned"
+#!/usr/bin/env python
+# vim: set et ts=2 sw=2 tw=79:
+#
+# Copyright (C) 2015 Minted Inc.
+#
+# All Rights Reserved
+endsnippet
+
+# New Function
+snippet def "python funciton with docstring"
+def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+  """TODO: docstring
+  """
+  ${0}
+endsnippet
+
+# if __name__ == '__main__':
+snippet main
+if __name__ == '__main__':
+  ${0:main()}
+endsnippet
+
+snippet from
+from ${1:package} import ${0:module}
+endsnippet
+
+snippet test
+import mock
+import unittest
+
+class ${1:test_class}(unittest.TestCase):
+  """TODO: docstring
+  """
+  ${0:content}
+endsnippet
+
+snippet class
+class ${1:name}(object):
+  """TODO: docstring
+  """
+endsnippet

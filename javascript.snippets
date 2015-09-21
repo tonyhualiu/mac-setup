@@ -1,0 +1,60 @@
+snippet header "header file for javascript @mitned"
+// vim: set ts=2 sw=2 et tw=72 ft=javascript:
+/**
+ * Copyright (C) 2015 Minted Inc.
+ * All Rights Reserved
+ * CTAG:TODO
+ */
+endsnippet
+
+snippet umd "umd header for minted"
+var module; UMD(module, {
+  'minted:m': ['M'],
+  'minted:vendor/backbone-1.0.0.min': 'Backbone',
+  'minted:vendor/jquery-1.9.1.min': '$',
+  'minted:vendor/underscore-1.8.2.min': '_',
+})(this, function (m_module, Backbone, $, _) {
+
+  "use strict";
+
+  return {
+  };
+
+});
+endsnippet
+
+snippet function "javascript function for backbone"
+${1:fname}: function(${2:var}) {
+  ${0}
+},
+endsnippet
+
+snippet describe "javascript unit test describe"
+describe('${1:description}', function() {
+  ${0}
+});
+endsnippet
+
+snippet it "javascript unit test it"
+it('${1:description}', function() {
+  ${0}
+});
+endsnippet
+
+snippet before "javascript unit test beforeEach hook"
+beforeEach(function() {
+  ${0}
+})
+endsnippet
+
+snippet after "javascript unit test afterEach hook"
+afterEach(function() {
+  ${0}
+})
+endsnippet
+
+snippet /** "javascript comment block"
+/**
+ * ${0}
+ */
+endsnippet

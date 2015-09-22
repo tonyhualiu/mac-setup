@@ -52,7 +52,7 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-" let mapleader = ","
+let mapleader = ","
 " let g:mapleader = ","
 
 " Fast saving
@@ -147,7 +147,7 @@ set foldcolumn=1
 syntax enable
 
 try
-  colorscheme desert
+  colorscheme badwolf
 catch
 endtry
 
@@ -191,7 +191,7 @@ set tabstop=2
 
 " Linebreak on 79 characters
 set lbr
-set textwidth=79
+set textwidth=80
 set colorcolumn=80
 
 set ai "Auto indent
@@ -511,7 +511,7 @@ let g:ctrlp_user_command = {
   \ },
   \ 'fallback': 'find %s -type f'
 \ }
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:20'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:50'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ultisnips
